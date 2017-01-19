@@ -41,6 +41,7 @@ from a component to a container (/src/components/posts_index)
 
 ## Lecture 82
 - Steps to putting this together:
+
 1. scaffold out the posts/new
 2. add component to routes file as a new URL that the user can navigate to
 3. implement a button in the posts/index component that allows them to navigate to the 'new' post page
