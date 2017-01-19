@@ -21,5 +21,11 @@ course on Udemy.
 add {this.props.children} to the App component otherwise it won't know where to
 display it
 
-
-* finished L78, start L79
+## Lecture 80
+- In the weather app, user clicked 'search' which called the action creator, the action
+goes through middleware, reducer
+- when the URL changes, need to somehow call an action creator to fetch data
+- componentWillMount() is a lifecycle method that React recognizes and calls automatically whenever
+the component is about to be rendered for the first time.  
+- it will not be called on subsequent re-renders though
+- this is a great place to fetch our data
