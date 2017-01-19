@@ -6,7 +6,7 @@ course on Udemy.
 
 
 ## Next Steps
-- Lecture 74
+
 
 ## Lecture 74
 - Here are the basic steps to bring in routes:
@@ -29,3 +29,49 @@ goes through middleware, reducer
 the component is about to be rendered for the first time.  
 - it will not be called on subsequent re-renders though
 - this is a great place to fetch our data
+
+## Lecture 81
+- To give our react Component the ability to call an action creator, we need to upgrade it
+from a component to a container (/src/components/posts_index)
+- 4 steps:
+  - import Connect at the top
+  - import action creator
+  - mapDispatchToProps function
+  - connect that to our component
+
+## Lecture 82
+- Steps to putting this together:
+1. scaffold out the posts/new
+1. add component to routes file as a new URL that the user can navigate to
+1. implement a button in the posts/index component that allows them to navigate to the 'new' post page
+1. add an actual form for people to add content
+1. create the action creator and update our reducer
+
+Step 1
+```javascript
+// components/posts_new.js
+import React, { Component } from 'react';
+
+class PostsNew extends Component {
+	render() {
+		return (
+			<div>Create Form </div>
+		);
+	}
+}
+
+export default PostsNew;
+```
+
+```javascript
+// routes.js
+import PostsIndex from './components/posts_index';
+import PostsNew from './components/posts_new';
+.
+.
+.
+	<IndexRoute component={PostsIndex} />
+	<Route path="posts/new" component={PostsNew} />
+</Route>
+```
+
