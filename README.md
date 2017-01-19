@@ -64,6 +64,7 @@ class PostsNew extends Component {
 export default PostsNew;
 ```
 
+Step 2
 ```javascript
 // routes.js
 import PostsIndex from './components/posts_index';
@@ -76,3 +77,28 @@ import PostsNew from './components/posts_new';
 </Route>
 ```
 
+Step 3
+```javascript
+// components/posts_index.js
+import { fetchPosts } from '../actions/index';
+import { Link } from 'react-router';
+.
+.
+.
+// add the following div to our component
+<div className="text-xs-right">
+	<Link to="/posts/new" className="btn btn-primary">
+		Add a Post
+	</Link>
+</div>
+```
+
+Step 4
+```javascript
+
+```
+
+Step 5
+```javascript
+
+```
