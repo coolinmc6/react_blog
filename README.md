@@ -42,10 +42,10 @@ from a component to a container (/src/components/posts_index)
 ## Lecture 82
 - Steps to putting this together:
 1. scaffold out the posts/new
-1. add component to routes file as a new URL that the user can navigate to
-1. implement a button in the posts/index component that allows them to navigate to the 'new' post page
-1. add an actual form for people to add content
-1. create the action creator and update our reducer
+2. add component to routes file as a new URL that the user can navigate to
+3. implement a button in the posts/index component that allows them to navigate to the 'new' post page
+4. add an actual form for people to add content
+5. create the action creator and update our reducer
 
 Step 1
 ```javascript
