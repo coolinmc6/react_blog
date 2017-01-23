@@ -4,7 +4,18 @@ import { createPost } from '../actions/index';
 import { Link } from 'react-router';
 
 // you only really want to use context with react router
+/*
+- To navigate around without a Link tag, we need access to react-router.
+  - all components have access to react-router through the context property
+- to get access to react router, we had to define a contextType (static contextTypes...)
+- we then pulled the submission function to a separate helper function called onSubmit
+- we called our action creator (createPost) and then once it is successfully created, we
+navigated them to the index
+- we navigated them by calling our router and added a new path for the router to automatically
+navigate to
+*/
 class PostsNew extends Component {
+	// to get access to the react router, we havd
 	static contextTypes = {
 		router: PropTypes.object
 	};
@@ -14,7 +25,7 @@ class PostsNew extends Component {
 		 .then(() => { 
 		 	// blog post has been created, navigate user to the index
 		 	// We navigate by calling this.context.router.push with the new path
-		 	// to navigate to
+		 	// to navigate to; '/' is the index
 		 	this.context.router.push('/');
 		 })
 	}
