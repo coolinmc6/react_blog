@@ -1,7 +1,9 @@
 # README
 
-This application is based on lectures from Stephen's Grider's 
-<a target="_blank" href="https://www.udemy.com/react-redux/">React-Redux</a>
+Welcome to [coolinmc6](https://github.com/coolinmc6)'s React Blog app! To see more of my React repositories, 
+take a look here: [React App](https://github.com/coolinmc6/react-app).
+
+This repository is based on lectures from Stephen's Grider's [Modern React with Redux](https://www.udemy.com/react-redux/)
 course on Udemy.
 
 ## Tools Used in this App
