@@ -111,3 +111,7 @@ Step 5
 
 ```
 
+### Lecture 97: Wrap-up
+- React router determined which components were rendered using the routes.js file.  It looked at the 
+path and the associated
+
